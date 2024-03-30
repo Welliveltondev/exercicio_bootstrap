@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio - Bootstrap</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./img/main.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Meu projeto Bootstrap
+        </h1>
+    </header>
+    <div class="container">
+        <div id="carousel-um" class="carousel-slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="2000"class="carousel-item active">
+                    <img class="d-block w-100" src="./img/bark-8526227_1280.jpg">
+                </div>
+                <div data-bs-interval="2000" class="carousel-item">
+                    <img class="d-block w-100" src="/lib/img/flowers-8622033_1280.jpg"/>
+                </div>
+                <div data-bs-interval="2000" class="carousel-item">
+                    <img class="d-block w-100" src="./img/water-8200502_1280 (1).jpg"/>
+                </div>
+            </div>
+        <button type="button" class="carousel-control-prev" data-bs-target="#carousel-um" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-slide="next" data-bs-target="carousel-um">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <div class="container">
+        <h2>
+            Destaques
+        </h2>
+        <div id="destaque" class="row">
+            <div class="col-sm-12 md-4 lg-1 g-1">
+                <img src="https://via.placeholder.com/180x180">
+            </div>
+            <div class="col-sm-12 md-4 lg-1 g-1">
+                <img src="https://via.placeholder.com/180x180">
+            </div>
+            <div class="col-sm-12 md-4 lg-1 g-1">
+                <img src="https://via.placeholder.com/180x180">
+            </div>
+            <div class="col-sm-12 md-4 lg-1 g-1">
+                <img src="https://via.placeholder.com/180x180">
+            </div>
+        </div>
+    </div>
+    <div class="container container-flex">
+        <div class="row">
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-header">
+                        Conserto de música
+                    </div>
+                    <div class="card-body">
+                        <img src="https://via.placeholder.com/120x320">
+                        <h4 class="card-title">Até mais</h4>
+                        <p>Venha conhecer o melhor da musica hip-hop.</p>
+                    </div>
+                    <footer class="card-footer">
+                        <p>Dia 24 de maio de 2025</p>
+                    </footer>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="./bootstrap.bundle.min.js"></script>
+</body>
+</html>

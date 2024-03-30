@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+header {
+    padding: 16px 0;
+    text-align: center;
+    background-color: #4662b4;
+    margin-bottom: 8px;
+}
+
+h2 {
+    padding: 16px 0;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#destaque {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    column-gap: 1%;
+}
+
+#destaque img {
+    padding: 6px;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+    width: 90%;
+    }
+
+    #destaque {
+        display: block;
+        flex-direction: column;
+    }
+
+    .card {
+        align-items: center;
+        padding: 90px;
+        margin-top: 3px;
+    }
+} 
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        width: 90%;
+    }
+
+    #destaque {
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        column-gap: 1%;
+        
+
+    }
+}
